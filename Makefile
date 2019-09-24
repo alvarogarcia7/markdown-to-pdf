@@ -4,13 +4,13 @@ add-statistics:
 	cp ${FILE} ${FILE}.mod
 
 	echo "## Statistics" >> ${FILE}.mod
-	echo -n "lines" >> ${FILE}.mod
+	echo "lines" >> ${FILE}.mod
 	wc -l ${FILE} >> ${FILE}.mod
 
-	echo -n "words" >> ${FILE}.mod
+	echo "words" >> ${FILE}.mod
 	wc -w ${FILE} >> ${FILE}.mod
 
-	echo -n "TODOs left:" >> ${FILE}.mod
+	echo "TODOs left:" >> ${FILE}.mod
 	cat ${FILE} | tr -c '[:alnum:]' '[\n*]' | grep -c '^TODO' >> ${FILE}.mod
 
 .PHONY: convert
