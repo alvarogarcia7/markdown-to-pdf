@@ -3,7 +3,7 @@ add-statistics:
 	echo "use FILE=... to specify which file"
 	cp ${FILE} ${FILE}.mod
 
-	echo "## Statistics" >> ${FILE}.mod
+	echo "\n\n ## Statistics" >> ${FILE}.mod
 	echo "lines" >> ${FILE}.mod
 	wc -l ${FILE} >> ${FILE}.mod
 
