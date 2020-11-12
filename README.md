@@ -9,6 +9,7 @@ Motivation: Do this conversion offline
 For now, the goals should be used together:
 
 ```
-FILE=your_file.md make add-statistics convert
+make install #only the first time
+FILE="your_file.md" make convert
 ```
 
