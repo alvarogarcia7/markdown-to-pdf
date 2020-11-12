@@ -2,3 +2,7 @@ node_modules/
 *.pdf
 *.md
 
+
+## mac files
+.DS_Store
+
