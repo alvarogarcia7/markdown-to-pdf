@@ -13,3 +13,6 @@ make install #only the first time
 FILE="your_file.md" make convert
 ```
 
+## Alternatives
+
+See the project [markdown-to-pdf](https://github.com/alvarogarcia7/markdown-to-pdf-pandoc).
